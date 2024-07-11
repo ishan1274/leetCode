@@ -4,9 +4,9 @@ public:
         int i = 0;
         for(int j = 1; j < nums.size(); j++)
         {
-            if(arr[j] != arr[i])
+            if(nums[j] != nums[i])
             {
-                arr[i+1] = arr[j];
+                nums[i+1] = nums[j];
                 i++;
             }
         }
