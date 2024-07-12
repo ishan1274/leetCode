@@ -4,7 +4,7 @@ public:
 int xorr(vector<int>&nums){
     int ans = 0;
     for(int i=0; i<nums.size(); i++){
-        ans^= nums[i];
+        ans^= nums[i];                     // We used XOR operation to find the missing number in the array .
     }
 
     int n=nums.size();
