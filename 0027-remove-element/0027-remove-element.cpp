@@ -1,14 +1,14 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        int i = 0;
-        while (i < nums.size()) {
-            if (nums[i] == val) {
-                nums.erase(nums.begin() + i); // Remove the element at index i
-            } else {
-                i++; // Only increment i if no removal occurred
+        int k=0;
+
+        for(int i=0; i<nums.size(); i++){
+            if(nums[i] != val){
+                nums[k]=num[i];
+                k++;
             }
         }
-        return nums.size(); // Return the new size of the vector
+        return k;
     }
 };
